@@ -5,12 +5,13 @@ import Contact from "./Components/Pages/Contact/Contact";
 import Home from "./Components/Pages/Home/Home";
 import Practice from "./Components/Pages/Practice/Practice";
 import English from "./Components/Pages/English/English";
+import FooterPage from "./Components/Footer/Footer";
 
-import ReactDOM from "react-dom";
-import { BrowserRouter, Routes, Router, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import { Switch } from "react-router";
 
 import "bootstrap/dist/css/bootstrap.min.css";
+// import "mdbreact/dist/css/mdb.css";
 import "./App.css";
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
           <Route path='/english' element={<English />} />
         </Routes>
       </BrowserRouter>
+      <FooterPage />
     </div>
   );
 }

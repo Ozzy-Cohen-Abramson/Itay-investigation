@@ -1,0 +1,32 @@
+.footer {
+  background-color: rgb(0, 204, 255);
+  padding: 30px 30px 10px;
+}
+
+.footer-collumn {
+  padding: 0 100px !important;
+  border-right: 1px solid rgb(127, 132, 133);
+}
+
+.title {
+  text-align: end;
+
+  margin-bottom: 35px;
+}
+
+.footer-list {
+  list-style: none;
+}
+
+.small-title {
+  text-align: end;
+}
+
+.footer-list li {
+  text-align: end;
+}
+
+input,
+textarea {
+  text-align: right;
+}
