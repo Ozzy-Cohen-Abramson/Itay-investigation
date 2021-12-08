@@ -1,5 +1,5 @@
 import React from "react";
 
 export default function Practice() {
-  return <div>Practice</div>;
+  return <div className='section-container'>Practice</div>;
 }

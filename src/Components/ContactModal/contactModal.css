@@ -1,0 +1,139 @@
+h1,
+h2,
+a,
+p {
+  font-family: helvetica, sans-serif;
+}
+h1 {
+  font-size: 3em;
+  text-align: center;
+  color: black;
+  margin: 0;
+  padding: 30vh 0 1em;
+}
+h2 {
+  text-align: center;
+  white-space: nowrap;
+  color: black;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+p {
+  text-align: left;
+}
+.popup-btn {
+  font-size: 32px;
+  color: black;
+  letter-spacing: 3px;
+  position: absolute;
+  top: 40%;
+  left: -20px;
+  margin-left: -35px;
+  transform: rotate(-270deg);
+  text-decoration: none;
+  transition: all 0.5s ease;
+  border: 5px solid black;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+.popup-btn:hover {
+  margin-left: 0;
+  color: black;
+  text-decoration: underline;
+}
+
+.popup {
+  position: fixed;
+  padding: 10px;
+  width: 500px;
+  border-radius: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgb(179, 179, 179);
+  visibility: hidden;
+  opacity: 0;
+  /* "delay" the visibility transition */
+  -webkit-transition: opacity 0.5s, visibility 0s linear 0.5s;
+  transition: opacity 0.5s, visibility 0s linear 0.5s;
+  z-index: 1;
+}
+.popup:target {
+  visibility: visible;
+  opacity: 1;
+  /* cancel visibility transition delay */
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+.popup-close {
+  position: absolute;
+  padding: 10px;
+  width: 500px;
+  border-radius: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.9);
+}
+.popup .close {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  padding: 10px;
+  color: #000;
+  transition: color 0.3s;
+  font-size: 2em;
+  line-height: 0.6em;
+  font-weight: bold;
+}
+.popup .close:hover {
+  color: #c90000;
+}
+
+.close-popup {
+  background: rgba(0, 0, 0, 0.7);
+  cursor: default;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  visibility: hidden;
+  /* "delay" the visibility transition */
+  -webkit-transition: opacity 0.5s, visibility 0s linear 0.5s;
+  transition: opacity 0.5s, visibility 0s linear 0.5s;
+}
+.popup:target + .close-popup {
+  opacity: 1;
+  visibility: visible;
+  /* cancel visibility transition delay */
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.form-text option {
+  text-align: right;
+}
+
+.message-to-user {
+  padding: 40px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .popup-btn {
+    font-size: 22px;
+    margin-left: -30px;
+    padding: 5px 15px;
+  }
+  .popup {
+    width: 90vw;
+  }
+  .popup-close {
+    width: 90vw;
+  }
+}

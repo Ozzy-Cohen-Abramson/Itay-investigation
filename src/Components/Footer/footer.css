@@ -10,6 +10,7 @@
 
 .title {
   text-align: end;
+  text-decoration: underline;
 
   margin-bottom: 35px;
 }
@@ -29,4 +30,21 @@
 input,
 textarea {
   text-align: right;
+}
+
+@media (max-width: 768px) {
+  .footer-collumn {
+    padding: 0 50px !important;
+    border-right: none;
+  }
+
+  .title {
+    text-align: end;
+    text-decoration: underline;
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+  .map {
+    margin-left: -15vw;
+  }
 }

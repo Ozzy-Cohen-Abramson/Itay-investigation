@@ -6,9 +6,13 @@ import Home from "./Components/Pages/Home/Home";
 import Practice from "./Components/Pages/Practice/Practice";
 import English from "./Components/Pages/English/English";
 import FooterPage from "./Components/Footer/Footer";
+import ContactModal from "./Components/ContactModal/ContactModal";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import { Switch } from "react-router";
+
+// https://www.tiram.co.il/contactus
+// https://wyinv.com/contact/
 
 import "bootstrap/dist/css/bootstrap.min.css";
 // import "mdbreact/dist/css/mdb.css";
@@ -28,6 +32,7 @@ function App() {
           <Route path='/english' element={<English />} />
         </Routes>
       </BrowserRouter>
+      <ContactModal />
       <FooterPage />
     </div>
   );
