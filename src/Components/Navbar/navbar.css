@@ -1,11 +1,12 @@
 body {
   margin: 0;
 }
+
 .header-fixed {
   position: fixed;
   top: 0;
   z-index: 1;
-  width: 100%;
+  width: 100vw;
   background-color: rgba(21, 21, 21, 1);
   box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.1);
 }
@@ -21,16 +22,17 @@ body {
 .navbar .logo {
   flex: 3;
 }
-
-.navbar .logo a {
-  display: block;
-  font-size: 30px;
-  font-weight: bold;
-  color: #fff;
-  text-decoration: none;
+.navbar .logo img {
+  width: 100px !important;
+  height: auto;
+  /* color: white; */
+  filter: invert(77%) sepia(5%) saturate(12%) hue-rotate(12deg) brightness(97%)
+    contrast(86%);
+  transition: all 0.3s ease;
 }
-.navbar .logo a:hover {
-  color: #777777;
+.navbar .logo img:hover {
+  filter: invert(100%) sepia(51%) saturate(0%) hue-rotate(200deg)
+    brightness(113%) contrast(101%);
 }
 
 .navbar nav {

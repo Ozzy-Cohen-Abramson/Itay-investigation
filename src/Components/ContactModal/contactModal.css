@@ -25,7 +25,7 @@ p {
 }
 .popup-btn {
   font-size: 32px;
-  color: black;
+  color: white;
   letter-spacing: 3px;
   position: absolute;
   top: 40%;
@@ -34,14 +34,15 @@ p {
   transform: rotate(-270deg);
   text-decoration: none;
   transition: all 0.5s ease;
-  border: 5px solid black;
+  border: 5px solid white;
   border-radius: 15px;
   padding: 15px;
 }
 
 .popup-btn:hover {
   margin-left: 0;
-  color: black;
+  color: white;
+
   text-decoration: underline;
 }
 

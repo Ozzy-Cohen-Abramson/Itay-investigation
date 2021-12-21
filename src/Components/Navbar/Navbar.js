@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import { Container, Navbar, Nav, NavDropdown } from "react-bootstrap";
+import Logo from "../../img/logo.svg";
 import "./navbar.css";
 
 export default function NavbarComponent() {
@@ -11,7 +12,7 @@ export default function NavbarComponent() {
         <div className='navbar container'>
           <div className='logo'>
             <Navbar.Brand to='/' as={Link}>
-              Cohen
+              <img className='nav-logo' src={Logo}></img>
             </Navbar.Brand>
           </div>
           <input type='checkbox' id='navbar-toggle' />

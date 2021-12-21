@@ -1,6 +1,9 @@
 .footer {
-  background-color: rgb(0, 204, 255);
+  background-color: rgba(21, 21, 21, 1);
+  color: #555;
   padding: 30px 30px 10px;
+
+  z-index: 2;
 }
 
 .footer-collumn {

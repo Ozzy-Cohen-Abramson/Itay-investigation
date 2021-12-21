@@ -6,7 +6,7 @@ import "./footer.css";
 
 const FooterPage = () => {
   return (
-    <MDBFooter className='pt-4 mt-4 footer'>
+    <MDBFooter className='pt-4 footer'>
       <MDBContainer fluid className='text-center text-md-left'>
         <MDBRow>
           <MDBCol md='3' className='footer-collumn'>
