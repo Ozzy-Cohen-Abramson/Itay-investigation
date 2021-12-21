@@ -1,4 +1,6 @@
 import React from "react";
+import { Routes, Route } from "react-router-dom";
+
 import NavbarComponent from "./Components/Navbar/Navbar";
 import About from "./Components/Pages/About/About";
 import Contact from "./Components/Pages/Contact/Contact";
@@ -8,7 +10,6 @@ import English from "./Components/Pages/English/English";
 import FooterPage from "./Components/Footer/Footer";
 import ContactModal from "./Components/ContactModal/ContactModal";
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import { Switch } from "react-router";
 
 // https://www.tiram.co.il/contactus
@@ -22,16 +23,13 @@ function App() {
   return (
     <div>
       <NavbarComponent />
-
-      <BrowserRouter>
-        <Routes>
-          <Route exact path='/' element={<Home />} />
-          <Route path='/about' element={<About />} />
-          <Route path='/services' element={<Practice />} />
-          <Route path='/contact' element={<Contact />} />
-          <Route path='/english' element={<English />} />
-        </Routes>
-      </BrowserRouter>
+      <Routes>
+        <Route exact path='/' element={<Home />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/services' element={<Practice />} />
+        <Route path='/contact' element={<Contact />} />
+        <Route path='/english' element={<English />} />
+      </Routes>
       <ContactModal />
       <FooterPage />
     </div>
