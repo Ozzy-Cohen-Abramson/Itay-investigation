@@ -1,0 +1,35 @@
+.invest-list {
+  list-style: none;
+  width: 65vw;
+}
+
+.list-item {
+  /* text-align: end; */
+  font-size: 1.25rem;
+  transition: all 0.3s ease;
+}
+.list-text {
+  /* text-align: end; */
+  font-size: 1.25rem;
+  width: 50vw;
+}
+
+.bold-text {
+  width: 50vw;
+  font-size: 1.4rem;
+  margin: 5vw;
+}
+/* .list-item:hover {
+  font-size: 1.4rem;
+} */
+@media (max-width: 768px) {
+  .invest-list {
+    width: 90vw;
+  }
+
+  .list-text {
+    /* text-align: end; */
+    font-size: 1.25rem;
+    width: 60vw;
+  }
+}

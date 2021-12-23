@@ -27,15 +27,16 @@ export default function NavbarComponent() {
                 </Nav.Link>
               </li>
               <li>
-                <Nav.Link to='/about' as={Link}>
-                  אודות
-                </Nav.Link>
-              </li>
-              <li>
                 <Nav.Link to='/services' as={Link}>
                   תחומי עיסוק
                 </Nav.Link>
               </li>
+              <li>
+                <Nav.Link to='/about' as={Link}>
+                  אודות
+                </Nav.Link>
+              </li>
+
               <li>
                 <Nav.Link to='/english' as={Link}>
                   English

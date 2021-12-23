@@ -1,10 +1,20 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:regular,bold,italic&subset=latin,latin-ext");
+
+* {
+  font-family: "Assistant", sans-serif;
+}
+
+.App {
+  overflow: hidden;
+}
+
 .section-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100vw;
-  margin: 75px auto 0;
+  margin: 78px auto 0;
   background: #444;
   color: #aaa;
   /* background-color: yellow; */
@@ -13,26 +23,26 @@
 .section-title,
 .second-title,
 .section-text {
-  width: 80vw;
+  width: 60vw;
 }
 
 .section-title {
   font-size: 32px;
-  text-align: end;
+  /* text-align: end; */
   padding: 15px 35px;
   margin-right: -10vw;
   text-decoration: underline;
 }
 .second-title {
   font-size: 32px;
-  text-align: end;
+  /* text-align: end; */
   padding: 15px 35px 0;
   margin-right: -10vw;
   /* text-decoration: underline; */
 }
 .section-text {
   font-size: 23px;
-  text-align: end;
+  text-align: start;
   padding: 0 35px;
   margin-right: -10vw;
 }
@@ -46,5 +56,9 @@
   .second-title,
   .section-text {
     width: 90vw;
+  }
+
+  .section-container {
+    margin: 86px auto 0;
   }
 }
