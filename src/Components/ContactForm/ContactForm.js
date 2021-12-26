@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Form, Button } from "react-bootstrap";
 
+import "../ContactModal/contactModal.css";
+
 export default function ContactForm() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -98,9 +100,11 @@ export default function ContactForm() {
             }}
           />
         </Form.Group>
-        <Button disabled={!btnDis} type='submit'>
-          שליחה
-        </Button>
+        <div className=' btn-container'>
+          <Button disabled={!btnDis} type='submit' className='submit-btn'>
+            שליחה
+          </Button>
+        </div>
       </Form>
       {message && (
         <div className='message-to-user'>

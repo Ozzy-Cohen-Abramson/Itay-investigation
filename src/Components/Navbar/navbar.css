@@ -174,12 +174,18 @@
     line-height: 60px;
     color: #fff !important;
     text-decoration: none;
+    transform: scale(1);
+    transition: all 0.3s ease;
   }
   .navbar nav li.active {
     background: #555;
   }
   .navbar nav li:hover {
     background: #333;
+  }
+  .navbar nav li:hover a {
+    color: #700303 !important;
+    transform: scale(1.1);
   }
   .navbar label {
     display: none;

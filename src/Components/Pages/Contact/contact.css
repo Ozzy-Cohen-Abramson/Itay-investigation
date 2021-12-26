@@ -5,9 +5,27 @@
   /* background-color: rgba(0, 0, 0, 0.397); */
 }
 
+.form-title-container {
+  margin-top: 30px;
+  border: 2px solid #555;
+  border-radius: 5px;
+  box-shadow: 0px 0px 25px #888888;
+  background-color: #333;
+  padding: 35px;
+  transition: all 0.3s ease;
+}
+.form-title-container:hover {
+  padding: 40px;
+}
+
+.contact-container form {
+  width: 450px;
+}
+
 .contact-title {
-  text-align: center;
-  margin-bottom: 50px;
+  text-align: start;
+  width: 450px;
+  margin-bottom: 30px;
 }
 
 @media (max-width: 768px) {
@@ -16,5 +34,17 @@
     padding: 50px;
     margin: 30px auto;
     background-color: rgba(0, 0, 0, 0.397);
+  }
+
+  .form-title-container {
+    width: 90vw;
+  }
+
+  .contact-title {
+    width: 90vw;
+  }
+
+  .contact-container form {
+    width: 100%;
   }
 }
