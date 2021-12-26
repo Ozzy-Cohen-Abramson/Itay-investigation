@@ -1,6 +1,6 @@
 .contact-container {
   width: 50vw;
-  padding: 50px;
+  padding: 0 50px;
   margin: 30px auto;
   /* background-color: rgba(0, 0, 0, 0.397); */
 }
@@ -13,6 +13,7 @@
   background-color: #333;
   padding: 35px;
   transition: all 0.3s ease;
+  margin-bottom: 50px;
 }
 .form-title-container:hover {
   padding: 40px;
@@ -31,7 +32,7 @@
 @media (max-width: 768px) {
   .contact-container {
     width: 90vw;
-    padding: 50px;
+    padding: 0 50px;
     margin: 30px auto;
     background-color: rgba(0, 0, 0, 0.397);
   }

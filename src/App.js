@@ -18,6 +18,7 @@ import ContactModal from "./Components/ContactModal/ContactModal";
 import "bootstrap/dist/css/bootstrap.min.css";
 // import "mdbreact/dist/css/mdb.css";
 import "./App.css";
+import "./scrollArrow.css";
 
 function App() {
   return (

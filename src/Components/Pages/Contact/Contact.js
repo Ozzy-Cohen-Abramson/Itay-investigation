@@ -2,6 +2,8 @@ import React from "react";
 import ContactForm from "../../ContactForm/ContactForm";
 import Fade from "react-reveal/Fade";
 
+import tech from "../../../img/headers/tech.webp";
+
 import "./contact.css";
 
 export default function Contact() {
@@ -12,6 +14,13 @@ export default function Contact() {
 
   return (
     <div className='contact-container section-container'>
+      <Fade bottom>
+        <img className='about-img' src={tech}></img>
+      </Fade>
+      <a href='#container'>
+        <div class='arrow'></div>
+      </a>
+      <div id='container'></div>
       <Fade bottom>
         <h4 className='second-title'>פרטי התקשרות</h4>
         <ul className='invest-list'>

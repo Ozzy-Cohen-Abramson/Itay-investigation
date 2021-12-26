@@ -8,6 +8,10 @@
   overflow: hidden;
 }
 
+#container {
+  padding-top: 70px;
+}
+
 .section-container {
   display: flex;
   flex-direction: column;
@@ -60,5 +64,9 @@
 
   .section-container {
     margin: 86px auto 0;
+  }
+
+  #container {
+    padding-top: 0;
   }
 }

@@ -1,6 +1,8 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
 
+import cameras from "../../../img/headers/cameras.webp";
+
 import "./practice.css";
 
 export default function Practice() {
@@ -37,6 +39,13 @@ export default function Practice() {
 
   return (
     <div className='section-container'>
+      <Fade bottom>
+        <img className='about-img' src={cameras}></img>
+      </Fade>
+      <a href='#container'>
+        <div class='arrow'></div>
+      </a>
+      <div id='container'></div>
       <Fade bottom>
         <h4 className='second-title'> חקירות כלליות </h4>
         <ul className='invest-list'>

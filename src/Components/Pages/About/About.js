@@ -1,6 +1,10 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
 
+import glass from "../../../img/headers/glass.webp";
+
+import "./about.css";
+
 export default function About() {
   const decipherCases = [
     "שמירה על סטנדרטים גבוהים ביותר זה למעלה מ-30 שנה.",
@@ -11,7 +15,13 @@ export default function About() {
 
   return (
     <div className='section-container'>
-      {" "}
+      <Fade bottom>
+        <img className='about-img' src={glass}></img>
+      </Fade>
+      <a href='#container'>
+        <div class='arrow'></div>
+      </a>
+      <div id='container'></div>
       <Fade bottom>
         <h4 className='second-title'>
           {" "}

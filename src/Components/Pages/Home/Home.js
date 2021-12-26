@@ -12,6 +12,10 @@ export default function Home() {
       <div className='header'>
         <img src={pin}></img>
       </div>
+      <a href='#container'>
+        <div class='arrow'></div>
+      </a>
+      <div id='container'></div>
 
       <Fade bottom>
         <h3 className='section-title'>
