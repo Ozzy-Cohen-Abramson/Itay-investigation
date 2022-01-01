@@ -22,13 +22,8 @@
 .navbar .logo img {
   width: 100px !important;
   height: auto;
-<<<<<<< HEAD
-  filter: invert(7%) sepia(94%) saturate(4210%) hue-rotate(356deg)
-    brightness(91%) contrast(106%);
-=======
   filter: invert(100%) sepia(51%) saturate(0%) hue-rotate(200deg)
     brightness(113%) contrast(101%);
->>>>>>> 96076897b4bcea6aa5b379efa9a8f795a06bf691
   transition: all 0.3s ease;
 }
 .navbar .logo img:hover {
