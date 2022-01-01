@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.f85fa4a9.chunk.css",
-    "main.js": "/static/js/main.6a1cd91b.chunk.js",
-    "main.js.map": "/static/js/main.6a1cd91b.chunk.js.map",
+    "main.js": "/static/js/main.6a99f4cb.chunk.js",
+    "main.js.map": "/static/js/main.6a99f4cb.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.e4a1d543.js",
     "runtime-main.js.map": "/static/js/runtime-main.e4a1d543.js.map",
     "static/css/2.0a9ec390.chunk.css": "/static/css/2.0a9ec390.chunk.css",
@@ -14,23 +14,23 @@
     "static/css/2.0a9ec390.chunk.css.map": "/static/css/2.0a9ec390.chunk.css.map",
     "static/css/main.f85fa4a9.chunk.css.map": "/static/css/main.f85fa4a9.chunk.css.map",
     "static/js/2.cb64b331.chunk.js.LICENSE.txt": "/static/js/2.cb64b331.chunk.js.LICENSE.txt",
-    "static/media/cameras.52269e4d.jpg": "/static/media/cameras.52269e4d.jpg",
+    "static/media/cameras.339911e2.webp": "/static/media/cameras.339911e2.webp",
     "static/media/cameras.ad7be6e4.webp": "/static/media/cameras.ad7be6e4.webp",
-    "static/media/glass.5c2200c0.jpg": "/static/media/glass.5c2200c0.jpg",
+    "static/media/glass.7170cd5e.webp": "/static/media/glass.7170cd5e.webp",
     "static/media/glass.89553096.webp": "/static/media/glass.89553096.webp",
     "static/media/logo.9728733b.svg": "/static/media/logo.9728733b.svg",
     "static/media/pin.cc1213a3.png": "/static/media/pin.cc1213a3.png",
-    "static/media/suit.0d7bb897.jpg": "/static/media/suit.0d7bb897.jpg",
+    "static/media/suit.3e5450b2.webp": "/static/media/suit.3e5450b2.webp",
     "static/media/tech.003bf007.webp": "/static/media/tech.003bf007.webp",
-    "static/media/tech.d3382066.jpg": "/static/media/tech.d3382066.jpg",
-    "static/media/towers.020ffc02.jpg": "/static/media/towers.020ffc02.jpg",
-    "static/media/towers.7649e7af.webp": "/static/media/towers.7649e7af.webp"
+    "static/media/tech.b57a9f96.webp": "/static/media/tech.b57a9f96.webp",
+    "static/media/towers.7649e7af.webp": "/static/media/towers.7649e7af.webp",
+    "static/media/towers.9d23bf63.webp": "/static/media/towers.9d23bf63.webp"
   },
   "entrypoints": [
     "static/js/runtime-main.e4a1d543.js",
     "static/css/2.0a9ec390.chunk.css",
     "static/js/2.cb64b331.chunk.js",
     "static/css/main.f85fa4a9.chunk.css",
-    "static/js/main.6a1cd91b.chunk.js"
+    "static/js/main.6a99f4cb.chunk.js"
   ]
 }

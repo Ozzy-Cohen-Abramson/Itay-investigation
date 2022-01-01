@@ -4,11 +4,11 @@ import Zoom from "react-reveal/Zoom";
 import Fade from "react-reveal/Fade";
 
 // images
-import cameras from "../../img/home-grid/cameras.jpg";
-import glass from "../../img/home-grid/glass.jpg";
-import suit from "../../img/home-grid/suit.jpg";
-import tech from "../../img/home-grid/tech.jpg";
-import towers from "../../img/home-grid/towers.jpg";
+import cameras from "../../img/home-grid/cameras.webp";
+import glass from "../../img/home-grid/glass.webp";
+import suit from "../../img/home-grid/suit.webp";
+import tech from "../../img/home-grid/tech.webp";
+import towers from "../../img/home-grid/towers.webp";
 
 export default function HomeImgGrid() {
   return (
