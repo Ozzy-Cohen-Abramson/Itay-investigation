@@ -46,6 +46,16 @@ const FooterPage = () => {
               <li>שבעה ימים בשבוע 24 שעות ביממה.</li>
             </ul>
           </MDBCol>{" "}
+          {/* <MDBCol md='3' className='footer-collumn'>
+            <h3 className='title'>מיקומנו</h3>
+
+            <iframe
+              className='map'
+              src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3478.2790430759437!2d48.06101978490139!3d29.332816882146876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3fcf9d93c5b816b1%3A0x53be187ef044034f!2sSalmiya%20Indian%20SALOON.%20JISAN!5e0!3m2!1siw!2sil!4v1638962537605!5m2!1siw!2sil'
+              width='300'
+              height='300'
+              loading='lazy'></iframe>
+          </MDBCol> */}
           <MDBCol md='4' className='footer-collumn'>
             <h3 className='title'>צור קשר</h3>
             <ContactForm />

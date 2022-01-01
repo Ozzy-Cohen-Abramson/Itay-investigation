@@ -1,20 +1,32 @@
 {
   "files": {
+<<<<<<< HEAD
     "main.css": "/static/css/main.f85fa4a9.chunk.css",
     "main.js": "/static/js/main.6a99f4cb.chunk.js",
     "main.js.map": "/static/js/main.6a99f4cb.chunk.js.map",
+=======
+    "main.css": "/static/css/main.40bd977e.chunk.css",
+    "main.js": "/static/js/main.bc21b511.chunk.js",
+    "main.js.map": "/static/js/main.bc21b511.chunk.js.map",
+>>>>>>> 96076897b4bcea6aa5b379efa9a8f795a06bf691
     "runtime-main.js": "/static/js/runtime-main.e4a1d543.js",
     "runtime-main.js.map": "/static/js/runtime-main.e4a1d543.js.map",
     "static/css/2.0a9ec390.chunk.css": "/static/css/2.0a9ec390.chunk.css",
-    "static/js/2.cb64b331.chunk.js": "/static/js/2.cb64b331.chunk.js",
-    "static/js/2.cb64b331.chunk.js.map": "/static/js/2.cb64b331.chunk.js.map",
+    "static/js/2.d246368f.chunk.js": "/static/js/2.d246368f.chunk.js",
+    "static/js/2.d246368f.chunk.js.map": "/static/js/2.d246368f.chunk.js.map",
     "static/js/3.e8d8686e.chunk.js": "/static/js/3.e8d8686e.chunk.js",
     "static/js/3.e8d8686e.chunk.js.map": "/static/js/3.e8d8686e.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.0a9ec390.chunk.css.map": "/static/css/2.0a9ec390.chunk.css.map",
+<<<<<<< HEAD
     "static/css/main.f85fa4a9.chunk.css.map": "/static/css/main.f85fa4a9.chunk.css.map",
     "static/js/2.cb64b331.chunk.js.LICENSE.txt": "/static/js/2.cb64b331.chunk.js.LICENSE.txt",
     "static/media/cameras.339911e2.webp": "/static/media/cameras.339911e2.webp",
+=======
+    "static/css/main.40bd977e.chunk.css.map": "/static/css/main.40bd977e.chunk.css.map",
+    "static/js/2.d246368f.chunk.js.LICENSE.txt": "/static/js/2.d246368f.chunk.js.LICENSE.txt",
+    "static/media/cameras.52269e4d.jpg": "/static/media/cameras.52269e4d.jpg",
+>>>>>>> 96076897b4bcea6aa5b379efa9a8f795a06bf691
     "static/media/cameras.ad7be6e4.webp": "/static/media/cameras.ad7be6e4.webp",
     "static/media/glass.7170cd5e.webp": "/static/media/glass.7170cd5e.webp",
     "static/media/glass.89553096.webp": "/static/media/glass.89553096.webp",
@@ -29,8 +41,14 @@
   "entrypoints": [
     "static/js/runtime-main.e4a1d543.js",
     "static/css/2.0a9ec390.chunk.css",
+<<<<<<< HEAD
     "static/js/2.cb64b331.chunk.js",
     "static/css/main.f85fa4a9.chunk.css",
     "static/js/main.6a99f4cb.chunk.js"
+=======
+    "static/js/2.d246368f.chunk.js",
+    "static/css/main.40bd977e.chunk.css",
+    "static/js/main.bc21b511.chunk.js"
+>>>>>>> 96076897b4bcea6aa5b379efa9a8f795a06bf691
   ]
 }
