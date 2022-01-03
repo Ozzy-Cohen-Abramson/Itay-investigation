@@ -21,8 +21,10 @@ export default function HomeImgGrid() {
         </Zoom>
         <Fade>
           <div className='box-text'>
-            <h4 className='grid-title'> מי אני </h4>
-            <p className='grid-text'>פסקה קצרה על העבר שלך כחוקר</p>
+            <h4 className='grid-title'> הלקוח </h4>
+            <p className='grid-text'>
+              לקוחות המשרד מקבלים שירות מקצועי ויחס אישי סביב לשעון.
+            </p>
           </div>
         </Fade>
         <Zoom>
@@ -32,8 +34,11 @@ export default function HomeImgGrid() {
         </Zoom>
         <Fade>
           <div className='box-text'>
-            <h4 className='grid-title'> מי אני </h4>
-            <p className='grid-text'>פסקה קצרה על העבר שלך כחוקר</p>
+            <h4 className='grid-title'> שטח פעילות </h4>
+            <p className='grid-text'>
+              אנו ערוכים בפריסה ארצית ליציאה מהירה לפעילות בכל הארץ וגם לפעילות
+              בחו&quot;ל.
+            </p>
           </div>
         </Fade>
         <Zoom>
@@ -43,8 +48,11 @@ export default function HomeImgGrid() {
         </Zoom>
         <Fade>
           <div className='box-text'>
-            <h4 className='grid-title'> מי אני </h4>
-            <p className='grid-text'>פסקה קצרה על העבר שלך כחוקר</p>
+            <h4 className='grid-title'> שירות </h4>
+            <p className='grid-text'>
+              עם לקוחותינו נמנים גופים מסחריים שונים, חברות מובילות בתחומן,
+              משרדי עורכי דין, רואי חשבון ולקוחות פרטיים.
+            </p>
           </div>
         </Fade>
         <Zoom>
@@ -54,8 +62,11 @@ export default function HomeImgGrid() {
         </Zoom>
         <Fade>
           <div className='box-text'>
-            <h4 className='grid-title'> מי אני </h4>
-            <p className='grid-text'>פסקה קצרה על העבר שלך כחוקר</p>
+            <h4 className='grid-title'> החוקרים </h4>
+            <p className='grid-text'>
+              שירותינו ניתן על ידי צוות חוקרים מיומן בעל כישורים במגוון תחומי
+              פעולה.
+            </p>
           </div>
         </Fade>
         <Zoom>
