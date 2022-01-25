@@ -1,5 +1,5 @@
 .contact-container {
-  width: 50vw;
+  width: 100vw;
   padding: 0 50px;
   margin: 30px auto;
   /* background-color: rgba(0, 0, 0, 0.397); */
@@ -29,7 +29,24 @@
   margin-bottom: 30px;
 }
 
-@media (max-width: 768px) {
+.contact-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+}
+
+.contact-social a {
+  margin: 10px 15px;
+  transition: all 0.3s ease;
+}
+
+.contact-social a:hover {
+  margin: 10px 20px;
+}
+
+@media (max-width: 900px) {
   .contact-container {
     width: 90vw;
     padding: 0 50px;

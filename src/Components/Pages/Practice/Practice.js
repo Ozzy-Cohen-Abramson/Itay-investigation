@@ -1,11 +1,14 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
 
-import cameras from "../../../img/headers/cameras.webp";
+// import cameras from "../../../img/headers/will-myers-NnODYexRg7o-unsplash-1-1-ConvertImage.jpg";
 
 import "./practice.css";
 
 export default function Practice() {
+  const cameras =
+    "https://firebasestorage.googleapis.com/v0/b/itay-investigation-new.appspot.com/o/headres%2Fwill-myers-NnODYexRg7o-unsplash-1-1-ConvertImage-min.jpg?alt=media&token=e329d0f3-54f2-4fed-a1af-2ed716610f92";
+
   const typeOverall = [
     "פרטים אישיים.",
     "חשבונות בנקים.",
@@ -20,7 +23,7 @@ export default function Practice() {
   ];
 
   const privateInvest = [
-    "ליוויו בתהליכים משפטיים נגד גורמים פרטיים.",
+    "ליוויו בתהליכים משפטיים נגד גורמים.",
     "ליווי בהליכי גירושין.",
     "בדיקה דיסקרטית של בן/בת הזוג או של החתן/הכלה לעתיד.",
     'איסוף מידע כלכלי על בן/בת זוג (הפקדות לביטוחים, קרנות, משכנתאות, הלוואות, תוכניות חיסכון, מניות, סניפי בנק, נדל"ן וכלי רכב).',
@@ -37,21 +40,29 @@ export default function Practice() {
     "מערכות אזעקה מהמתוחכמות בשוק לצורך מיגון מבנים ומשרדים.",
   ];
 
+  const findArr = [
+    "איתור פרטים אישיים.",
+    "איתור כתובת.",
+    "איתורים לפי דף פייסבוק/ אינסטגרם",
+    "איתורים לצורך מסירות משפטיות",
+    "איתור מקום עבודה",
+  ];
+
   return (
     <div className='section-container'>
       <Fade bottom>
         <img className='about-img' src={cameras}></img>
       </Fade>
       <a href='#container'>
-        <div class='arrow'></div>
+        <div className='arrow'></div>
       </a>
       <div id='container'></div>
       <Fade bottom>
         <h4 className='second-title'> חקירות כלליות </h4>
         <ul className='invest-list'>
-          {typeOverall.map((item) => {
+          {typeOverall.map((item, i) => {
             return (
-              <li>
+              <li key={i}>
                 <h5 className='list-item'> {item} </h5>
               </li>
             );
@@ -61,9 +72,9 @@ export default function Practice() {
       <Fade bottom>
         <h4 className='second-title'> חקירות אישות </h4>
         <ul className='invest-list'>
-          {privateInvest.map((item) => {
+          {privateInvest.map((item, i) => {
             return (
-              <li>
+              <li key={i}>
                 <h5 className='list-item'> {item} </h5>
               </li>
             );
@@ -73,11 +84,18 @@ export default function Practice() {
       <Fade bottom>
         <h4 className='second-title'> איתורים </h4>
         <ul className='invest-list'>
-          <li>
+          {findArr.map((item, i) => {
+            return (
+              <li key={i}>
+                <h5 className='list-item'> {item} </h5>
+              </li>
+            );
+          })}
+          {/* <li>
             <h5 className='list-text'>
               איתור אנשים הוא תחום שבו אנו מתמחים. איתור נעדרים הוא לרוב משימה
               לא קלה, שדורשת ברוב המקרים נחישות וקריאטיביות במציאת פתרון יעיל
-              לבעיה.{" "}
+              לבעיה.
               <b>קיימים הרבה מקרים בהם הנעדר עצמו לא מעוניין שימצאו אותו.</b>
             </h5>
             <br />
@@ -97,7 +115,7 @@ export default function Practice() {
               תעסוקה.
             </h5>
             <br />
-          </li>
+          </li> */}
         </ul>
       </Fade>
       <Fade bottom>
@@ -105,11 +123,9 @@ export default function Practice() {
         <ul className='invest-list'>
           <li>
             <h5 className='list-text'>
-              אנו מבצעים בדיקות פוליגרף מקצועיות באמצעות ציוד מתקדם מתוצרת חברת
-              AXCITION האמריקנית – המובילה בעולם בייצור ציוד חדיש ומתוחכם לביצוע
-              בדיקות פוליגרף ממוחשבות. בשל אמינותו, נבחר מכשיר הפוליגרף של
-              AXCITION ליעיל ביותר על-ידי גופי המודיעין והמשטרה המובילים בעולם,
-              כולל: NYPD ,FBI ,CIA ו-LAPD.
+              אנו מבצעים בדיקות פוליגרף מקצועיות באמצעות ציוד מתקדם וממוחשבות.
+              בשל אמינותו, נבחר מכשיר הפוליגרף של AXCITION ליעיל ביותר על-ידי
+              גופי המודיעין והמשטרה המובילים בעולם, כולל: NYPD ,FBI ,CIA ו-LAPD.
             </h5>
             <br />
           </li>
@@ -128,13 +144,13 @@ export default function Practice() {
         <ul className='invest-list'>
           <li>
             <h5 className='list-text'>
-              משרדנו מבצע בדיקות האזנה תקופתיות עבור רשויות מקומיות, משרדים
+              אנו מבצעים בדיקות האזנה תקופתיות עבור רשויות מקומיות, משרדים
               ממשלתיים, מפעלים מסחריים, מפעלי הייטק, משרדי עורכי דין ומוסדות
               רשמיים בישראל ובעולם. במידת הצורך, מתבצעות גם בדיקות פרטיות
-              חד-פעמיות.
-              <br /> הציוד האלקטרוני שעומד לרשותנו הוא משוכלל ומתקדם ביותר.
+              חד-פעמיות. הציוד האלקטרוני שעומד לרשותנו הוא משוכלל ומתקדם ביותר.
               במידה שיש חשד להאזנת סתר או צילום בביתכם, ברכבכם, במשרדכם או בקווי
               הטלפון שברשותכם, הציוד יאפשר לנו לאתר ביעילות ובמהירות את המיקום.
+              <br />
               ניתן לבצע פעולות חקירה נוספות לאיסוף ראיות, לצורך הגשת תביעה
               משפטית בגין פגיעה בפרטיות.
             </h5>
@@ -142,7 +158,7 @@ export default function Practice() {
           </li>
         </ul>
       </Fade>
-      <Fade bottom>
+      {/* <Fade bottom>
         <h4 className='second-title'> ליווי ובניית מערך אבטחת מידע</h4>
         <ul className='invest-list'>
           <li>
@@ -207,36 +223,41 @@ export default function Practice() {
             <br />
           </li>
         </ul>
-      </Fade>
+      </Fade> */}
       <Fade bottom>
-        <h4 className='second-title'>התקנת ציוד טכני גלוי / סמוי</h4>
+        <h4 className='second-title'>התקנת ציוד טכני גלוי או סמוי</h4>
         <ul className='invest-list'>
           <li>
             <h5 className='list-text'>
-              צוות טכני מנוסה מטעמנו מתאים את הפתרון הנכון לכל בעיה ומתקין את
+              אני יודעים למצוא ולהכין את הפתרון הנכון לכל בעיה ואנו נתקין את
               הציוד הדרוש לבנייני משרדים, למפעלים, לשדות תעופה ולרשויות מקומיות.
               ציוד מתקדם זה מספק מענה במקרים של גניבות, פריצות, התנכלויות
               ואיומים, וכן למניעת ריגול תעשייתי ועסקי.
             </h5>
             <br />
           </li>
-          {technicalEquipment.map((item) => {
+          {/* {technicalEquipment.map((item, i) => {
             return (
-              <li>
+              <li key={i}>
                 <h5 className='list-item'> {item} </h5>
               </li>
             );
-          })}
+          })} */}
         </ul>
       </Fade>
       <Fade>
         <h5 className='bold-text'>
           <b>
-            אנחנו מתצפתים, חוקרים, מאזינים, מאתרים בהתאם לדרישותיכם, ולבסוף
-            מדווחים על הממצאים. דוחותינו כתובים בצורה ברורה וקלה להבנה, כדי
-            שתוכלו להפיק מהם את המיטב ולקבל את ההחלטות הנכונות.
+            אנחנו עוקבים, חוקרים, מתשאלים, מאזינים, מאתרים בהתאם לדרישותיכם,
+            ולבסוף מדווחים על הממצאים. דוחותינו כתובים בצורה ברורה וקלה להבנה,
+            כדי שתוכלו להפיק מהם את המיטב ולקבל את ההחלטות הנכונות.
           </b>
         </h5>
+      </Fade>
+      <Fade>
+        <div className='practice-img'>
+          <img src='https://firebasestorage.googleapis.com/v0/b/itay-investigation-new.appspot.com/o/homeGrid%2Fcameras.webp?alt=media&token=f8d853a7-9bc6-418c-9cac-119fcd43d754' />
+        </div>
       </Fade>
     </div>
   );

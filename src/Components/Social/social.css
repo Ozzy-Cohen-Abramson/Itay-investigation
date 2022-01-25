@@ -1,0 +1,20 @@
+.social {
+  position: fixed;
+  bottom: 25px;
+  left: 25px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.social a {
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+.social a:hover {
+  margin: 15px 5px;
+}
+
+.whatapp-inner {
+  display: none;
+}

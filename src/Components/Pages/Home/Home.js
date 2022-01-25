@@ -1,6 +1,10 @@
 import React from "react";
 import HomeImgGrid from "../../HomeImgGrid/HomeImgGrid";
 import pin from "../../../img/pin.png";
+import logo from "../../../img/logo.svg";
+import mainImg from "../../../img/mainImg.jpg";
+import detectiveGroup from "../../../img/detectiveGroup.png";
+
 import Fade from "react-reveal/Fade";
 
 import { Container, Row, Col } from "react-bootstrap";
@@ -9,24 +13,27 @@ import "./home.css";
 export default function Home() {
   return (
     <div className='section-container'>
-      <div className='header'>
-        <img src={pin}></img>
-      </div>
+      <Fade cascade>
+        <div className='header'>
+          <img src={mainImg}></img>
+        </div>
+        <div className='logo-main-container'>
+          <img src={logo} />
+        </div>
+      </Fade>
       <a href='#container'>
-        <div class='arrow'></div>
+        <div className='arrow'></div>
       </a>
       <div id='container'></div>
 
       <Fade bottom>
-        <h3 className='section-title'>
-          מידע וחקירות – אחוזי הצלחה מהגבוהים בענף
-        </h3>
+        <h3 className='section-title'>איתי כהן, משרד חקירות</h3>
       </Fade>
       <div className='side-by-side'>
         <Fade bottom>
-          <h4 className='second-title'> איתי כהן </h4>
+          {/* <h4 className='second-title'> איתי כהן </h4> */}
           <p className='section-text'>
-            &quot;איתי חקירות&quot; הינו משרד מוביל בתחומו, אשר במהלך השנים צבר
+            "איתי כהן, משרד חקירות" הינו משרד מוביל בתחומו, אשר במהלך השנים צבר
             מומחיות רבה בכל תחומי החקירות.
             <br />
             <br /> המשרד בניהולו של איתי כהן, חוקר פרטי וחבר בלשכת החוקרים
@@ -35,15 +42,18 @@ export default function Home() {
             כל אחד מהחוקרים במשרד, מקצוען בתחומו, בעל רישיון לעסוק בחקירות מטעם
             משרד המשפטים ומחויב לדיסקרטיות מלאה כלפי הלקוח, תיק החקירה והמשרד.
             <br />
-            המשרד משתף פעולה במידת הצורך עם חוקרים מקצועיים יוצאי משטרה,
-            צה&quot;ל ויחידות מודיעין מובחרות, וכן עם אנשי מחשבים ותקשורת מהשורה
-            הראשונה.
+            כל אחד מהחוקרים המועסקים במשרד וכן פרילנסרים המועסקים על ידי המשרד,
+            מקצוען בתחומו, בעל רישיון לעסוק בחקירות מטעם משרד המשפטים ומחויב
+            לדיסקרטיות מלאה כלפי המשרד, תיק החקירה וכמובן ללקוח.
           </p>
         </Fade>
-        {/* <Fade bottom>
-          <h4 className='second-title'> מי אני </h4>
-          <p className='section-text'>פסקה קצרה על העבר שלך כחוקר</p>
-        </Fade> */}
+        <Fade bottom>
+          <div className='group-img'>
+            {/* <h4 className='second-title'> מי אני </h4>
+          <p className='section-text'>פסקה קצרה על העבר שלך כחוקר</p> */}
+            <img src={detectiveGroup} />
+          </div>
+        </Fade>
       </div>
 
       {/* <Fade bottom>

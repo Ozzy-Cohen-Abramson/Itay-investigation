@@ -1,5 +1,5 @@
-import React from "react";
-import { Routes, Route } from "react-router-dom";
+import React, { useEffect, useRef, useState } from "react";
+import { Routes, Route, useLocation } from "react-router-dom";
 
 import NavbarComponent from "./Components/Navbar/Navbar";
 import About from "./Components/Pages/About/About";
@@ -9,8 +9,9 @@ import Practice from "./Components/Pages/Practice/Practice";
 import English from "./Components/Pages/English/English";
 import FooterPage from "./Components/Footer/Footer";
 import ContactModal from "./Components/ContactModal/ContactModal";
+import Social from "./Components/Social/Social";
 
-// import { Switch } from "react-router";
+import ScrollToTop from "react-scroll-to-top";
 
 // https://www.tiram.co.il/contactus
 // https://wyinv.com/contact/
@@ -21,6 +22,20 @@ import "./App.css";
 import "./scrollArrow.css";
 
 function App() {
+  const { pathname } = useLocation();
+
+  const [socialVisible, setSocialVisible] = useState(true);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  // const { inViewport, enterCount, leaveCount } = useInViewport(footerRef);
+
+  useEffect(() => {
+    // console.log(document.body.scrollHeight);
+  });
+
   return (
     <div className='App' dir='rtl'>
       <NavbarComponent />
@@ -32,7 +47,9 @@ function App() {
         <Route path='/english' element={<English />} />
       </Routes>
       <ContactModal />
-      <FooterPage />
+      {socialVisible && <Social />}
+      <FooterPage setSocialVisible={setSocialVisible} />
+      <ScrollToTop smooth />
     </div>
   );
 }

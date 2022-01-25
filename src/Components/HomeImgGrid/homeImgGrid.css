@@ -45,7 +45,7 @@
   opacity: 0.8;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .game-board {
     display: grid;
     grid-template-rows: 50vh 50vh 50vh;

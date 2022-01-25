@@ -1,6 +1,6 @@
 .footer {
   background-color: rgba(21, 21, 21, 1);
-  color: #555;
+  color: rgb(223, 223, 223);
   padding: 30px 30px 10px;
 
   z-index: 2;
@@ -30,7 +30,7 @@
   text-align: start;
 }
 .footer-list li a {
-  color: #555;
+  color: rgb(223, 223, 223);
   text-decoration: none;
   transition: all 0.3s ease;
 }
@@ -51,7 +51,7 @@ textarea {
   text-align: right;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .footer-collumn {
     padding: 0 50px !important;
     border-right: none;

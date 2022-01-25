@@ -22,11 +22,11 @@ export default function NavbarComponent() {
             </Navbar.Brand>
           </div>
           <input type='checkbox' id='navbar-toggle' ref={toggleNav} />
-          <label for='navbar-toggle'>
+          <label htmlFor='navbar-toggle'>
             <i></i>
           </label>
           <nav className='menu'>
-            <ul>
+            <ul className='nav-links'>
               <li onClick={closeNav}>
                 <Nav.Link to='/' as={Link}>
                   דף הבית

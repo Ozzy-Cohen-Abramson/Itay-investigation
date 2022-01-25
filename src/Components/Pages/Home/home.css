@@ -3,13 +3,40 @@
   height: 95vh;
 }
 
+.logo-main-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  top: 25vh;
+}
+
+.logo-main-container img {
+  width: 45%;
+  height: auto;
+  filter: invert(12%) sepia(48%) saturate(3473%) hue-rotate(349deg)
+    brightness(104%) contrast(122%);
+}
+
 .text-and-image {
   margin-bottom: 40px;
 }
 
-@media (max-width: 768px) {
+.group-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 0;
+}
+
+@media (max-width: 900px) {
   .header img {
     width: 100vw;
     height: auto;
+  }
+
+  .logo-main-container {
+    top: 14vh;
   }
 }

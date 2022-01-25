@@ -1,9 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { Form, Button } from "react-bootstrap";
+
+import emailjs from "emailjs-com";
 
 import "../ContactModal/contactModal.css";
 
 export default function ContactForm() {
+  const form = useRef();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
@@ -27,7 +30,28 @@ export default function ContactForm() {
     // console.log(phone);
     // console.log(hour);
     // console.log(text);
-    setMessage(true);
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
+        form.current,
+        process.env.REACT_APP_USER_ID
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          if (result.text == "OK") {
+            setMessage(true);
+            alert("תודה! נחזור אליכם בהקדם");
+            setTimeout(() => {
+              setMessage(false);
+            }, 3000);
+          }
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
 
     setTimeout(() => {
       setMessage(false);
@@ -36,12 +60,13 @@ export default function ContactForm() {
 
   return (
     <>
-      <Form onSubmit={handleSubmit}>
+      <Form onSubmit={handleSubmit} ref={form}>
         <Form.Group
           className='mb-3 form-text'
           controlId='exampleForm.ControlInput1'>
           <Form.Control
             type='text'
+            name='name'
             placeholder='שם מלא'
             onChange={(e) => {
               handleCheck();
@@ -54,6 +79,7 @@ export default function ContactForm() {
           controlId='exampleForm.ControlInput1'>
           <Form.Control
             type='email'
+            name='email'
             placeholder='דוא"ל'
             onChange={(e) => {
               handleCheck();
@@ -67,6 +93,7 @@ export default function ContactForm() {
           <Form.Control
             type='text'
             placeholder='טלפון'
+            name='phone'
             onChange={(e) => {
               handleCheck();
               setPhone(e.target.value);
@@ -76,6 +103,7 @@ export default function ContactForm() {
         <Form.Select
           aria-label='Default select example'
           className='mb-3 form-text'
+          name='hour'
           onChange={(e) => {
             handleCheck();
             setHour(e.target.value);
@@ -94,6 +122,7 @@ export default function ContactForm() {
             as='textarea'
             rows={3}
             placeholder='הערות'
+            name='text'
             onChange={(e) => {
               handleCheck();
               setText(e.target.value);

@@ -1,5 +1,5 @@
 .invest-list {
-  list-style: none;
+  /* list-style: none; */
   width: 65vw;
 }
 
@@ -11,6 +11,7 @@
 .list-text {
   /* text-align: end; */
   font-size: 1.25rem;
+  line-height: 36px;
   width: 50vw;
 }
 
@@ -19,10 +20,17 @@
   font-size: 1.4rem;
   margin: 5vw;
 }
+
+.practice-img img {
+  width: 50vw;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 35px;
+}
 /* .list-item:hover {
   font-size: 1.4rem;
 } */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .invest-list {
     width: 90vw;
   }
@@ -30,6 +38,14 @@
   .list-text {
     /* text-align: end; */
     font-size: 1.25rem;
-    width: 60vw;
+    width: 70vw;
+  }
+
+  .practice-img {
+    display: none;
+  }
+
+  .bold-text {
+    width: 70vw;
   }
 }
