@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useCallback, useState } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 
 import NavbarComponent from "./Components/Navbar/Navbar";
@@ -20,21 +20,27 @@ import "bootstrap/dist/css/bootstrap.min.css";
 // import "mdbreact/dist/css/mdb.css";
 import "./App.css";
 import "./scrollArrow.css";
+import trackPathForAnalytics from "./utils/trackPath";
 
 function App() {
-  const { pathname } = useLocation();
-
   const [socialVisible, setSocialVisible] = useState(true);
+  const { pathname, search } = useLocation();
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
 
-  // const { inViewport, enterCount, leaveCount } = useInViewport(footerRef);
+  const analytics = useCallback(() => {
+    trackPathForAnalytics({
+      path: pathname,
+      search: search,
+      title: pathname.split("/")[1],
+    });
+  }, [pathname, search]);
 
   useEffect(() => {
-    // console.log(document.body.scrollHeight);
-  });
+    analytics();
+  }, [analytics]);
 
   return (
     <div className='App' dir='rtl'>
