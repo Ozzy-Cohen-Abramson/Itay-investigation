@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import ContactForm from "../../ContactForm/ContactForm";
 import Fade from "react-reveal/Fade";
 import { SocialIcon } from "react-social-icons";
@@ -9,6 +9,8 @@ import phone from "../../../img/contact/phone-svgrepo-com.svg";
 import "./contact.css";
 
 export default function Contact() {
+  const [isheaderIsLoading, setIsHeaderIsLoading] = useState(false);
+
   const tech =
     "https://firebasestorage.googleapis.com/v0/b/itay-investigation-new.appspot.com/o/headres%2Ftech-min.jpg?alt=media&token=3dcea81f-5c24-4d49-8b2e-5b497a4862a8";
 
@@ -19,12 +21,13 @@ export default function Contact() {
 
   return (
     <div className='contact-container section-container'>
-      <Fade bottom>
+      <Fade>
         <img className='about-img' src={tech}></img>
       </Fade>
       <a href='#container'>
         <div className='arrow'></div>
       </a>
+
       <div id='container'></div>
       <Fade bottom>
         <h4 className='second-title'>פרטי התקשרות</h4>

@@ -17,9 +17,9 @@ export default function NavbarComponent() {
       <div className='header header-fixed'>
         <div className='navbar container'>
           <div className='logo'>
-            <Navbar.Brand to='/' as={Link}>
+            <Nav.Link to='/' as={Link}>
               <img className='nav-logo' src={Logo}></img>
-            </Navbar.Brand>
+            </Nav.Link>
           </div>
           <input type='checkbox' id='navbar-toggle' ref={toggleNav} />
           <label htmlFor='navbar-toggle'>

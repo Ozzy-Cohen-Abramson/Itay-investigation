@@ -18,7 +18,7 @@ export default function About() {
 
   return (
     <div className='section-container'>
-      <Fade bottom>
+      <Fade>
         <img className='about-img' src={glass}></img>
       </Fade>
       <a href='#container'>

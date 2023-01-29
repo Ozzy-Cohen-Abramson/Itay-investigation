@@ -18,3 +18,9 @@
 .whatapp-inner {
   display: none;
 }
+
+@media (max-width: 768px) {
+  .social a {
+    height: 45px;
+  }
+}

@@ -50,7 +50,7 @@ export default function Practice() {
 
   return (
     <div className='section-container'>
-      <Fade bottom>
+      <Fade>
         <img className='about-img' src={cameras}></img>
       </Fade>
       <a href='#container'>

@@ -133,7 +133,7 @@ p {
   align-self: center;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
   .popup-btn {
     display: none;
   }

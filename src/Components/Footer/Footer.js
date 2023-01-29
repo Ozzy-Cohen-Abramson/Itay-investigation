@@ -35,7 +35,7 @@ const FooterPage = (props) => {
       <MDBFooter className='pt-4 footer'>
         <MDBContainer fluid className='text-center text-md-left'>
           <MDBRow>
-            <MDBCol md='4' className='footer-collumn'>
+            <MDBCol md='3' className='footer-collumn'>
               <h3 className='title '>מפת האתר</h3>
               <ul className='footer-list'>
                 <li>
@@ -60,11 +60,12 @@ const FooterPage = (props) => {
                 </li>
               </ul>
             </MDBCol>
-            <MDBCol md='4' className='footer-collumn'>
+            <MDBCol md='3' className='footer-collumn'>
               <h3 className='title'>פרטים נוספים</h3>
               <ul className='footer-list'>
                 <li>טלפון: 053-7865001</li>
                 <li>מייל: office@cohenin.com</li>
+                <li>כתובת: האומן 10, חדרה</li>
               </ul>
               <h4 className='small-title'>שעות פעילות</h4>
               <ul className='footer-list'>
@@ -89,17 +90,17 @@ const FooterPage = (props) => {
                 />
               </div>
             </MDBCol>{" "}
-            {/* <MDBCol md='3' className='footer-collumn'>
-            <h3 className='title'>מיקומנו</h3>
+            <MDBCol md='3' className='footer-collumn'>
+              <h3 className='title'>מיקומנו</h3>
 
-            <iframe
-              className='map'
-              src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3478.2790430759437!2d48.06101978490139!3d29.332816882146876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3fcf9d93c5b816b1%3A0x53be187ef044034f!2sSalmiya%20Indian%20SALOON.%20JISAN!5e0!3m2!1siw!2sil!4v1638962537605!5m2!1siw!2sil'
-              width='300'
-              height='300'
-              loading='lazy'></iframe>
-          </MDBCol> */}
-            <MDBCol md='4' className='footer-collumn'>
+              <iframe
+                className='map'
+                src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d841.7306997254888!2d34.91287220700689!3d32.44800113400547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151d125dfef4c86b%3A0xf1222ee1af5edcbb!2sHaUman%20St%2010%2C%20Hadera%2C%20Israel!5e0!3m2!1sen!2snl!4v1651427864325!5m2!1sen!2snl'
+                width='300'
+                height='300'
+                loading='lazy'></iframe>
+            </MDBCol>
+            <MDBCol md='3' className='footer-collumn'>
               <h3 className='title'>צור קשר</h3>
               <ContactForm />
             </MDBCol>

@@ -9,7 +9,7 @@ export default function English() {
 
   return (
     <div className='section-container'>
-      <Fade bottom>
+      <Fade>
         <img className='about-img' src={towers}></img>
       </Fade>
       <a href='#container'>

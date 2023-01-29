@@ -2,7 +2,7 @@ import React from "react";
 import HomeImgGrid from "../../HomeImgGrid/HomeImgGrid";
 import pin from "../../../img/pin.png";
 import logo from "../../../img/logo.svg";
-import mainImg from "../../../img/mainImg.jpg";
+import mainImg from "../../../img/headers/homeHeader.png";
 import detectiveGroup from "../../../img/detectiveGroup.png";
 
 import Fade from "react-reveal/Fade";
@@ -17,9 +17,9 @@ export default function Home() {
         <div className='header'>
           <img src={mainImg}></img>
         </div>
-        <div className='logo-main-container'>
+        {/* <div className='logo-main-container'>
           <img src={logo} />
-        </div>
+        </div> */}
       </Fade>
       <a href='#container'>
         <div className='arrow'></div>
@@ -27,7 +27,7 @@ export default function Home() {
       <div id='container'></div>
 
       <Fade bottom>
-        <h3 className='section-title'>איתי כהן, משרד חקירות</h3>
+        <h3 className='section-title'>איתי כהן - משרד חקירות</h3>
       </Fade>
       <div className='side-by-side'>
         <Fade bottom>

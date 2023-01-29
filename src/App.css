@@ -9,7 +9,7 @@
 }
 
 #container {
-  padding-top: 70px;
+  padding-top: 100px;
 }
 
 .section-container {
@@ -55,7 +55,7 @@
   margin-bottom: 40px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
   .section-title,
   .second-title,
   .section-text {
@@ -63,7 +63,7 @@
   }
 
   .section-container {
-    margin: 86px auto 0;
+    margin: 78px auto 0;
   }
 
   #container {
