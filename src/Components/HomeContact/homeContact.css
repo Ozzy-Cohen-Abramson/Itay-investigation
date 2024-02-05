@@ -21,3 +21,10 @@
     brightness(104%) contrast(122%);
   transition: all 0.3s ease;
 }
+
+@media (max-width: 768px) {
+  .homeContact {
+    top: 33vh;
+    width: 90vw;
+  }
+}

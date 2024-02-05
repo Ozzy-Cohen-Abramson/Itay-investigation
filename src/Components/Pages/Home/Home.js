@@ -27,7 +27,9 @@ export default function Home() {
       <div id='container'></div>
 
       <Fade bottom>
-        <h3 className='section-title'>קצת עלינו - איתי כהן, משרד חקירות</h3>
+        <h3 className='home-section-title'>
+          קצת עלינו - איתי כהן, משרד חקירות
+        </h3>
       </Fade>
       <div className='side-by-side'>
         <Fade bottom>

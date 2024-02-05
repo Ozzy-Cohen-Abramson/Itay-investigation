@@ -25,12 +25,13 @@
 }
 
 .section-title,
-.second-title,
+.home-section-title .second-title,
 .section-text {
   width: 60vw;
 }
 
-.section-title {
+.section-title,
+.home-section-title {
   font-size: 32px;
   /* text-align: end; */
   padding: 15px 35px;
@@ -57,9 +58,14 @@
 
 @media (max-width: 768px) {
   .section-title,
-  .second-title,
+  .home-section-title .second-title,
   .section-text {
     width: 95vw;
+  }
+
+  .home-section-title {
+    margin-right: 5px;
+    margin-top: 50vh;
   }
 
   .section-container {
