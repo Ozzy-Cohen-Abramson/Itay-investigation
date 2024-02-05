@@ -25,7 +25,8 @@
 }
 
 .section-title,
-.home-section-title .second-title,
+.home-section-title,
+.second-title,
 .section-text {
   width: 60vw;
 }
@@ -58,13 +59,13 @@
 
 @media (max-width: 768px) {
   .section-title,
-  .home-section-title .second-title,
+  .home-section-title,
+  .second-title,
   .section-text {
     width: 95vw;
   }
 
   .home-section-title {
-    margin-right: 5px;
     margin-top: 50vh;
   }
 
