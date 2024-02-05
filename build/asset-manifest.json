@@ -1,31 +1,31 @@
 {
   "files": {
-    "main.css": "/static/css/main.8824906f.chunk.css",
-    "main.js": "/static/js/main.8bee9892.chunk.js",
-    "main.js.map": "/static/js/main.8bee9892.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.d1fee246.js",
-    "runtime-main.js.map": "/static/js/runtime-main.d1fee246.js.map",
-    "static/css/2.27ad98c3.chunk.css": "/static/css/2.27ad98c3.chunk.css",
-    "static/js/2.4c831149.chunk.js": "/static/js/2.4c831149.chunk.js",
-    "static/js/2.4c831149.chunk.js.map": "/static/js/2.4c831149.chunk.js.map",
-    "static/js/3.20c0fe8c.chunk.js": "/static/js/3.20c0fe8c.chunk.js",
-    "static/js/3.20c0fe8c.chunk.js.map": "/static/js/3.20c0fe8c.chunk.js.map",
+    "main.css": "/static/css/main.169c49d3.chunk.css",
+    "main.js": "/static/js/main.3776c978.chunk.js",
+    "main.js.map": "/static/js/main.3776c978.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.ae6ae648.js",
+    "runtime-main.js.map": "/static/js/runtime-main.ae6ae648.js.map",
+    "static/css/2.0a9ec390.chunk.css": "/static/css/2.0a9ec390.chunk.css",
+    "static/js/2.a4e1319c.chunk.js": "/static/js/2.a4e1319c.chunk.js",
+    "static/js/2.a4e1319c.chunk.js.map": "/static/js/2.a4e1319c.chunk.js.map",
+    "static/js/3.ca5489ca.chunk.js": "/static/js/3.ca5489ca.chunk.js",
+    "static/js/3.ca5489ca.chunk.js.map": "/static/js/3.ca5489ca.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/2.27ad98c3.chunk.css.map": "/static/css/2.27ad98c3.chunk.css.map",
-    "static/css/main.8824906f.chunk.css.map": "/static/css/main.8824906f.chunk.css.map",
-    "static/js/2.4c831149.chunk.js.LICENSE.txt": "/static/js/2.4c831149.chunk.js.LICENSE.txt",
+    "static/css/2.0a9ec390.chunk.css.map": "/static/css/2.0a9ec390.chunk.css.map",
+    "static/css/main.169c49d3.chunk.css.map": "/static/css/main.169c49d3.chunk.css.map",
+    "static/js/2.a4e1319c.chunk.js.LICENSE.txt": "/static/js/2.a4e1319c.chunk.js.LICENSE.txt",
     "static/media/detective-svgrepo-com.d82e53cd.svg": "/static/media/detective-svgrepo-com.d82e53cd.svg",
     "static/media/email-svgrepo-com.09f59b22.svg": "/static/media/email-svgrepo-com.09f59b22.svg",
-    "static/media/homeHeader.399898bb.png": "/static/media/homeHeader.399898bb.png",
+    "static/media/homeHeader.ffa6f0d2.jpg": "/static/media/homeHeader.ffa6f0d2.jpg",
     "static/media/logo.3bf2f392.svg": "/static/media/logo.3bf2f392.svg",
-    "static/media/phone-svgrepo-com.6c48d180.svg": "/static/media/phone-svgrepo-com.6c48d180.svg",
-    "static/media/pin.cc1213a3.png": "/static/media/pin.cc1213a3.png"
+    "static/media/phone-icon.26887972.svg": "/static/media/phone-icon.26887972.svg",
+    "static/media/phone-svgrepo-com.6c48d180.svg": "/static/media/phone-svgrepo-com.6c48d180.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.d1fee246.js",
-    "static/css/2.27ad98c3.chunk.css",
-    "static/js/2.4c831149.chunk.js",
-    "static/css/main.8824906f.chunk.css",
-    "static/js/main.8bee9892.chunk.js"
+    "static/js/runtime-main.ae6ae648.js",
+    "static/css/2.0a9ec390.chunk.css",
+    "static/js/2.a4e1319c.chunk.js",
+    "static/css/main.169c49d3.chunk.css",
+    "static/js/main.3776c978.chunk.js"
   ]
 }
