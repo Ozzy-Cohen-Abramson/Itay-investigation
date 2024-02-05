@@ -60,7 +60,7 @@ const FooterPage = (props) => {
               <h3 className='title'>פרטים נוספים</h3>
               <ul className='footer-list'>
                 <li>
-                  טלפון: <a href='phone:0723975711'>0723975711</a>
+                  טלפון: <a href='tel:0723975711'>0723975711</a>
                 </li>
                 <li>מייל: office@cohenin.com</li>
                 <li>כתובת: האומן 10, חדרה</li>

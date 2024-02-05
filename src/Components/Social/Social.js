@@ -1,11 +1,15 @@
 import React from "react";
 import { SocialIcon } from "react-social-icons";
+import phoneIcon from "../../img/phone-icon.svg";
 
 import "./social.css";
 
 export default function Social() {
   return (
     <div className='social'>
+      <a id='phone-button' href='tel:0723975711'>
+        <img src={phoneIcon} />
+      </a>
       <SocialIcon
         url='https://www.facebook.com/Coheninv'
         target='_blank'

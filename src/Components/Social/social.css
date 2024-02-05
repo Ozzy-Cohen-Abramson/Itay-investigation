@@ -7,6 +7,27 @@
   flex-direction: column;
 }
 
+#phone-button {
+  display: none;
+  position: relative;
+  background: rgb(255, 196, 0);
+  padding: 1em;
+  border-radius: 50%;
+}
+
+#phone-button img {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  width: 23px;
+  left: 0;
+  right: 0;
+  top: 12px;
+  text-align: center;
+  filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(223deg)
+    brightness(111%) contrast(101%);
+}
+
 .social a {
   margin: 5px;
   transition: all 0.3s ease;
@@ -22,5 +43,9 @@
 @media (max-width: 768px) {
   .social a {
     height: 45px;
+  }
+
+  #phone-button {
+    display: inline;
   }
 }

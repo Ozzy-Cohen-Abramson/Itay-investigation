@@ -16,7 +16,7 @@ export default function Contact() {
     "https://firebasestorage.googleapis.com/v0/b/itay-investigation-new.appspot.com/o/headres%2Ftech-min.jpg?alt=media&token=3dcea81f-5c24-4d49-8b2e-5b497a4862a8";
 
   const contactArr = [
-    "לקבלת ייעוץ ראשוני מידי ודיסקרטי ללא עלות,<br/> התקשרו לנייד בכל שעה: <a href='phone:0723975711'>0723975711</a>.",
+    "לקבלת ייעוץ ראשוני מידי ודיסקרטי ללא עלות,<br/> התקשרו לנייד בכל שעה: <a href='tel:0723975711'>0723975711</a>.",
     'דוא"ל: office@cohenin.com   ',
   ];
 
