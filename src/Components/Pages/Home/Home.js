@@ -3,6 +3,7 @@ import HomeImgGrid from "../../HomeImgGrid/HomeImgGrid";
 import mainImg from "../../../img/headers/homeHeader.jpg";
 import detectiveGroup from "../../../img/detectiveGroup.png";
 import ContactForm from "../../ContactForm/ContactForm";
+import HomeContact from "../../HomeContact/HomeContact";
 
 import Fade from "react-reveal/Fade";
 
@@ -11,14 +12,15 @@ import "./home.css";
 export default function Home() {
   return (
     <div className='section-container'>
-      <Fade cascade>
-        <div className='header'>
-          <img src={mainImg}></img>
-        </div>
-        {/* <div className='logo-main-container'>
+      <div className='header'>
+        <img src={mainImg}></img>
+      </div>
+      {/* <div className='logo-main-container'>
           <img src={logo} />
         </div> */}
-      </Fade>
+
+      <HomeContact />
+
       <a href='#container'>
         <div className='arrow'></div>
       </a>
