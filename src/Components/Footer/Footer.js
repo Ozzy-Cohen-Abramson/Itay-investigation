@@ -1,6 +1,5 @@
 import React, { useRef, useEffect } from "react";
 import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
-import ContactForm from "../ContactForm/ContactForm";
 import { Link } from "react-router-dom";
 
 import { SocialIcon } from "react-social-icons";
@@ -15,9 +14,6 @@ const FooterPage = (props) => {
       window.innerHeight + window.scrollY >=
       document.body.offsetHeight - 500
     ) {
-      // console.log(document.body.offsetHeight);
-      // console.log(footerRef.current.clientHeight);
-      // console.log(document.body.scrollHeight);
       props.setSocialVisible(false);
     } else {
       props.setSocialVisible(true);
@@ -63,7 +59,9 @@ const FooterPage = (props) => {
             <MDBCol md='4' className='footer-collumn'>
               <h3 className='title'>פרטים נוספים</h3>
               <ul className='footer-list'>
-                <li>טלפון: 053-7865001</li>
+                <li>
+                  טלפון: <a href='phone:0723975711'>0723975711</a>
+                </li>
                 <li>מייל: office@cohenin.com</li>
                 <li>כתובת: האומן 10, חדרה</li>
               </ul>
@@ -100,10 +98,6 @@ const FooterPage = (props) => {
                 height='300'
                 loading='lazy'></iframe>
             </MDBCol>
-            {/* <MDBCol md='3' className='footer-collumn'>
-              <h3 className='title'>צור קשר</h3>
-              <ContactForm />
-            </MDBCol> */}
           </MDBRow>
         </MDBContainer>
         <div className='footer-copyright text-center py-3'>
