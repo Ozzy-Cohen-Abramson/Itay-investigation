@@ -16,7 +16,10 @@ export default function ContactForm() {
   const [btnDis, setBtnDis] = useState(false);
 
   const handleCheck = () => {
-    if (name && email && phone.length == 10 && hour && text) {
+    const formName = form.current[0].value;
+    const formEmail = form.current[1].value;
+    const formPhone = form.current[2].value;
+    if (formName && formEmail && formPhone.length == 10) {
       setBtnDis(true);
     } else {
       setBtnDis(false);
@@ -25,11 +28,7 @@ export default function ContactForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // console.log(name);
-    // console.log(email);
-    // console.log(phone);
-    // console.log(hour);
-    // console.log(text);
+
     emailjs
       .sendForm(
         process.env.REACT_APP_SERVICE_ID,
@@ -69,8 +68,8 @@ export default function ContactForm() {
             name='name'
             placeholder='שם מלא'
             onChange={(e) => {
-              handleCheck();
               setName(e.target.value);
+              handleCheck();
             }}
           />
         </Form.Group>
@@ -82,8 +81,8 @@ export default function ContactForm() {
             name='email'
             placeholder='דוא"ל'
             onChange={(e) => {
-              handleCheck();
               setEmail(e.target.value);
+              handleCheck();
             }}
           />
         </Form.Group>
@@ -95,12 +94,12 @@ export default function ContactForm() {
             placeholder='טלפון'
             name='phone'
             onChange={(e) => {
-              handleCheck();
               setPhone(e.target.value);
+              handleCheck();
             }}
           />
         </Form.Group>
-        <Form.Select
+        {/* <Form.Select
           aria-label='Default select example'
           className='mb-3 form-text'
           name='hour'
@@ -113,7 +112,6 @@ export default function ContactForm() {
           <option value='12:00 - 14:00'>12:00 - 14:00</option>
           <option value='14:00 - 17:00'>14:00 - 17:00</option>
           <option value='17:00 - 20:00'>17:00 - 20:00</option>
-          {/* <option value='4'>15:00 - 17:00</option> */}
         </Form.Select>
         <Form.Group
           className='mb-3 form-text'
@@ -128,7 +126,7 @@ export default function ContactForm() {
               setText(e.target.value);
             }}
           />
-        </Form.Group>
+        </Form.Group> */}
         <div className=' btn-container'>
           <Button disabled={!btnDis} type='submit' className='submit-btn'>
             שליחה
