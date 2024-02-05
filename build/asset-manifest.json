@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.169c49d3.chunk.css",
-    "main.js": "/static/js/main.3776c978.chunk.js",
-    "main.js.map": "/static/js/main.3776c978.chunk.js.map",
+    "main.css": "/static/css/main.f6588eef.chunk.css",
+    "main.js": "/static/js/main.1ba96dfd.chunk.js",
+    "main.js.map": "/static/js/main.1ba96dfd.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.ae6ae648.js",
     "runtime-main.js.map": "/static/js/runtime-main.ae6ae648.js.map",
     "static/css/2.0a9ec390.chunk.css": "/static/css/2.0a9ec390.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.ca5489ca.chunk.js.map": "/static/js/3.ca5489ca.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.0a9ec390.chunk.css.map": "/static/css/2.0a9ec390.chunk.css.map",
-    "static/css/main.169c49d3.chunk.css.map": "/static/css/main.169c49d3.chunk.css.map",
+    "static/css/main.f6588eef.chunk.css.map": "/static/css/main.f6588eef.chunk.css.map",
     "static/js/2.a4e1319c.chunk.js.LICENSE.txt": "/static/js/2.a4e1319c.chunk.js.LICENSE.txt",
     "static/media/detective-svgrepo-com.d82e53cd.svg": "/static/media/detective-svgrepo-com.d82e53cd.svg",
     "static/media/email-svgrepo-com.09f59b22.svg": "/static/media/email-svgrepo-com.09f59b22.svg",
@@ -25,7 +25,7 @@
     "static/js/runtime-main.ae6ae648.js",
     "static/css/2.0a9ec390.chunk.css",
     "static/js/2.a4e1319c.chunk.js",
-    "static/css/main.169c49d3.chunk.css",
-    "static/js/main.3776c978.chunk.js"
+    "static/css/main.f6588eef.chunk.css",
+    "static/js/main.1ba96dfd.chunk.js"
   ]
 }
