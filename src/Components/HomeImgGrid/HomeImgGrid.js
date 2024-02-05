@@ -2,7 +2,7 @@ import React from "react";
 import "./homeImgGrid.css";
 import Zoom from "react-reveal/Zoom";
 import Fade from "react-reveal/Fade";
-
+import { Link } from "react-router-dom";
 // images
 // import cameras from "../../img/home-grid/cameras.webp";
 // import glass from "../../img/home-grid/glass.webp";
@@ -77,6 +77,9 @@ export default function HomeImgGrid() {
             <p className='grid-text'>
               שירותינו ניתן על ידי צוות חוקרים מיומן בעל כישורים במגוון תחומי
               פעולה.
+            </p>
+            <p className='grid-text'>
+              לחצו <Link to='/services'>כאן</Link> כדי לראות את מגוון שירותינו
             </p>
           </div>
         </Fade>
