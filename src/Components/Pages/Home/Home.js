@@ -1,13 +1,11 @@
 import React from "react";
 import HomeImgGrid from "../../HomeImgGrid/HomeImgGrid";
-import pin from "../../../img/pin.png";
-import logo from "../../../img/logo.svg";
 import mainImg from "../../../img/headers/homeHeader.png";
 import detectiveGroup from "../../../img/detectiveGroup.png";
+import ContactForm from "../../ContactForm/ContactForm";
 
 import Fade from "react-reveal/Fade";
 
-import { Container, Row, Col } from "react-bootstrap";
 import "./home.css";
 
 export default function Home() {
@@ -73,6 +71,12 @@ export default function Home() {
         </div>
       </Fade> */}
       <HomeImgGrid />
+      <Fade bottom>
+        <div className='form-title-container'>
+          <h3 className='contact-title'>מה תרצו לדעת?</h3>
+          <ContactForm />
+        </div>
+      </Fade>
     </div>
   );
 }

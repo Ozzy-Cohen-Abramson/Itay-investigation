@@ -1,5 +1,6 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
+import ContactForm from "../../ContactForm/ContactForm";
 
 import detective from "../../../img/detective-svgrepo-com.svg";
 
@@ -80,6 +81,12 @@ export default function About() {
             <br />
           </li>
         </ul>
+      </Fade>
+      <Fade bottom>
+        <div className='form-title-container'>
+          <h3 className='contact-title'>מה תרצו לדעת?</h3>
+          <ContactForm />
+        </div>
       </Fade>
     </div>
   );

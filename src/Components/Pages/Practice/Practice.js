@@ -1,5 +1,6 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
+import ContactForm from "../../ContactForm/ContactForm";
 
 // import cameras from "../../../img/headers/will-myers-NnODYexRg7o-unsplash-1-1-ConvertImage.jpg";
 
@@ -257,6 +258,12 @@ export default function Practice() {
       <Fade>
         <div className='practice-img'>
           <img src='https://firebasestorage.googleapis.com/v0/b/itay-investigation-new.appspot.com/o/homeGrid%2Fcameras.webp?alt=media&token=f8d853a7-9bc6-418c-9cac-119fcd43d754' />
+        </div>
+      </Fade>
+      <Fade bottom>
+        <div className='form-title-container'>
+          <h3 className='contact-title'>מה תרצו לדעת?</h3>
+          <ContactForm />
         </div>
       </Fade>
     </div>

@@ -35,7 +35,7 @@ const FooterPage = (props) => {
       <MDBFooter className='pt-4 footer'>
         <MDBContainer fluid className='text-center text-md-left'>
           <MDBRow>
-            <MDBCol md='3' className='footer-collumn'>
+            <MDBCol md='4' className='footer-collumn'>
               <h3 className='title '>מפת האתר</h3>
               <ul className='footer-list'>
                 <li>
@@ -60,7 +60,7 @@ const FooterPage = (props) => {
                 </li>
               </ul>
             </MDBCol>
-            <MDBCol md='3' className='footer-collumn'>
+            <MDBCol md='4' className='footer-collumn'>
               <h3 className='title'>פרטים נוספים</h3>
               <ul className='footer-list'>
                 <li>טלפון: 053-7865001</li>
@@ -90,7 +90,7 @@ const FooterPage = (props) => {
                 />
               </div>
             </MDBCol>{" "}
-            <MDBCol md='3' className='footer-collumn'>
+            <MDBCol md='4' className='footer-collumn'>
               <h3 className='title'>מיקומנו</h3>
 
               <iframe
@@ -100,10 +100,10 @@ const FooterPage = (props) => {
                 height='300'
                 loading='lazy'></iframe>
             </MDBCol>
-            <MDBCol md='3' className='footer-collumn'>
+            {/* <MDBCol md='3' className='footer-collumn'>
               <h3 className='title'>צור קשר</h3>
               <ContactForm />
-            </MDBCol>
+            </MDBCol> */}
           </MDBRow>
         </MDBContainer>
         <div className='footer-copyright text-center py-3'>
