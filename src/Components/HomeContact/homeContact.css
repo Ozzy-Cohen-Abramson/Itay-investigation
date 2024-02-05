@@ -1,0 +1,23 @@
+.homeContact {
+  position: absolute;
+  top: 30vh;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  width: 20vw;
+  opacity: 0.85;
+  text-align: center;
+  background: grey;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+#nav-logo {
+  width: 240px;
+  height: auto;
+  color: #ff0000;
+  filter: invert(12%) sepia(48%) saturate(3473%) hue-rotate(349deg)
+    brightness(104%) contrast(122%);
+  transition: all 0.3s ease;
+}
