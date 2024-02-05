@@ -1,6 +1,6 @@
 import React from "react";
 import HomeImgGrid from "../../HomeImgGrid/HomeImgGrid";
-import mainImg from "../../../img/headers/homeHeader.png";
+import mainImg from "../../../img/headers/homeHeader.jpg";
 import detectiveGroup from "../../../img/detectiveGroup.png";
 import ContactForm from "../../ContactForm/ContactForm";
 
