@@ -7,7 +7,7 @@ import "./social.css";
 export default function Social() {
   return (
     <div className='social'>
-      <a id='phone-button' href='tel:0723975711'>
+      <a id='phone-button' href='tel:0537865001'>
         <img src={phoneIcon} />
       </a>
       <SocialIcon
